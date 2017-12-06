@@ -21,19 +21,33 @@ namespace PlayingAroundSimpleHashTable
 
             table.ShowTable();
 
+            //the values can not be more than 30 because the array size is 30!
+            //here they are exactly 30 elemenst and I' going to call the function to fit all elements and get
+            //collusion to see how the other hash function is handling that
+            table.ClearTheArray();
+            string[] elemntsToAdd2 = { "100", "520", "552", "100", "480", "800", "360", "760", "390", "390",
+                                       "100", "560", "280", "470", "333", "666", "160", "380", "137", "890",
+                                       "245", "345", "456", "654", "745", "235", "546", "879", "234", "390" };
+            table.HashFunction2(elemntsToAdd2, table.theArray);
+
+            table.ShowTable();
+
             Console.WriteLine("");
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
 
+        public void ClearTheArray()
+        {
+            theArray = Enumerable.Repeat("-1", theSize).ToArray();
+        }
 
         //we are filling the array with default values so its much easier to work for now
         SimpleHashTable(int size)
         {
             this.theSize = size;
             theArray = new string[theSize];
-            theArray = Enumerable.Repeat("-1", theSize).ToArray();
-
+            ClearTheArray();
         }
 
         //thi function is so simple assue that there is no conflict in items
@@ -45,6 +59,33 @@ namespace PlayingAroundSimpleHashTable
                 int theArrayIndex = int.Parse(stringsToInsert[i]);
                 string newValue = stringsToInsert[i];
                 theArray[theArrayIndex - 1] = newValue;
+            }
+        }
+
+        //this hash function is resolving the collusion problem by puting the items in 
+        //next avilable index
+        public void HashFunction2(string[] stringsToInsert, string[] theArray)
+        {
+            for (int i = 0; i < stringsToInsert.Length; i++)
+            {
+                int theArrayIndex = int.Parse(stringsToInsert[i]);
+                string newValue = stringsToInsert[i];
+
+                //we wan to sure that item will fit in the array
+                int index = theArrayIndex % (theSize - 1);
+
+                Console.WriteLine(" The calculated index = " + index.ToString() + " is for value " + newValue);
+
+                while (theArray[index] != "-1")
+                {
+                    index++;
+
+                    Console.WriteLine("Collusion try to put in index " + index.ToString());
+
+                    index %= theSize;
+                }
+
+                theArray[index] = newValue;
             }
         }
 
@@ -96,7 +137,7 @@ namespace PlayingAroundSimpleHashTable
 
                 for (int j = 0; j < columns; j++)
                 {
-                    string val = CreateColumnText( ( (columns * i) + (j + 1) ).ToString(), colWidth);
+                    string val = CreateColumnText( ( (columns * i) + j ).ToString(), colWidth);
                     Console.Write(val);
                 }
 
@@ -104,7 +145,7 @@ namespace PlayingAroundSimpleHashTable
 
                 for (int j = 0; j < columns; j++)
                 {
-                    string val = CreateColumnText(theArray[((columns * i) + (j + 1)) - 1], colWidth);
+                    string val = CreateColumnText(theArray[((columns * i) + j)], colWidth);
                     Console.Write(val );
                 }
 
