@@ -5,7 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Data_Structure
-{    
+{
+    //this are Big O for Double linked list    
+    // search => O(n)
+    // access => O(n) we have to search through items to find it
+    // Insert => O(1) because we are adding on top
+    // Delete => O(1) and removing last inserted 
+
     enum StackError {
         Success,
         StackOverFlow,
