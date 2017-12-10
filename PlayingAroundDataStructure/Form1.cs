@@ -276,7 +276,7 @@ namespace PlayingAroundDataStructure
                 i++;
             }
         }        
-
+        
         private void button10_Click(object sender, EventArgs e)
         {
             Box.Items.Clear();
@@ -288,7 +288,7 @@ namespace PlayingAroundDataStructure
             AddToBox("total of 0 => 7");
             AddToBox("array[0] = 0");
             AddToBox("array [4] = 8");
-
+            
             int[] numbers = { 0, 0, 0, 11, 8, 1, 5, 0, 0, 9, 2, 0, 0 };
 
             CustomizedHashTable hash = new CustomizedHashTable(numbers.Length);
@@ -304,7 +304,134 @@ namespace PlayingAroundDataStructure
             }
 
             AddToBox("----------");
-            AddToBox("Total number of zeros" + hash.GetZeroCount().ToString());
+            AddToBox("Total number of zeros" + hash.GetZeroCount().ToString()); 
+           
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            List<Student> list = new List<Student>();
+
+            AddToBox("The collection is list");
+            list.Add(new Student { Name = "Tina", Age = 36 });
+            list.Add(new Student { Name = "John", Age = 25 });
+            list.Add(new Student { Name = "Anna", Age = 40 });
+
+            Box.Items.Clear();
+
+            foreach (Student item in list)
+            {
+                AddToBox(string.Format("Name : {0}, Age : {1}", item.Name, item.Age));
+            }
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            System.Collections.Generic.LinkedList<Student> list = 
+                new System.Collections.Generic.LinkedList<Student>();
+
+            AddToBox("The collection is linked list");
+            list.AddLast(new Student { Name = "Tina", Age = 36 });
+            list.AddLast(new Student { Name = "John", Age = 25 });
+            list.AddLast(new Student { Name = "Anna", Age = 40 });
+
+            foreach (Student item in list)
+            {
+                AddToBox(string.Format("Name : {0}, Age : {1}", item.Name, item.Age));
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+            //Retrieving a value by using its key is very fast, close to O(1)
+            //the key value has to be unique and not null
+            //but the value van be null
+            Dictionary<int, Student> list =
+                new Dictionary<int, Student>();
+
+            AddToBox("The collection is Dictionary");
+            list.Add(0, new Student { Name = "Tina", Age = 36 });
+            list.Add(1, new Student { Name = "John", Age = 25 });
+            list.Add(2, new Student { Name = "Anna", Age = 40 });
+
+            for (int i = 0; i < list.Count ; i++)
+            {
+                AddToBox(string.Format("Name : {0}, Age : {1}", list[i].Name, list[i].Age));
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+            //is not sorted and doesn't accept duplicate values
+            HashSet<Student> list = new HashSet<Student>();
+
+            AddToBox("The collection is Hashset");
+            list.Add(new Student { Name = "Tina", Age = 36 });
+            list.Add(new Student { Name = "John", Age = 25 });
+            list.Add(new Student { Name = "Anna", Age = 40 });
+
+            foreach (Student item in list)
+            {
+                AddToBox(string.Format("Name : {0}, Age : {1}", item.Name, item.Age));
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            /*
+             * The SortedList generic class is a binary search tree with O(log n) retrieval, 
+             * where n is the number of elements in the dictionary. In this, it is similar to the 
+             * SortedDictionary generic class. The two classes have similar object models, 
+             * and both have O(log n) retrieval. Where the two classes differ is in memory use and 
+             * speed of insertion and removal: 
+             * 
+             * SortedList uses less memory than SortedDictionary.
+             * SortedDictionary has faster insertion and removal operations for unsorted data, O(log n) as 
+             * opposed to O(n) for SortedList.
+             * 
+             * If the list is populated all at once from sorted data, SortedList is faster than SortedDictionary.
+             */
+            Box.Items.Clear();
+
+            SortedList<int, Student> list = new SortedList<int, Student>();
+
+
+            AddToBox("The collection is SortedList");
+            list.Add(36, new Student { Name = "Tina", Age = 36 });
+            list.Add(25, new Student { Name = "John", Age = 25 });
+            list.Add(40, new Student { Name = "Anna", Age = 40 });
+
+            foreach (var item in list)
+            {
+                AddToBox(string.Format("Key => {0} : Name : {1}, Age : {2}", item.Key, item.Value.Name, item.Value.Age));
+            }
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            //This class implements a queue as a circular array
+
+            Box.Items.Clear();
+
+            Queue<Student> list = new Queue<Student>();
+
+
+            AddToBox("The collection is SortedList");
+            list.Enqueue(new Student { Name = "Tina", Age = 36 });
+            list.Enqueue(new Student { Name = "John", Age = 25 });
+            list.Enqueue(new Student { Name = "Anna", Age = 40 });
+
+            while (list.Count > 0)
+            {
+                Student st = list.Dequeue();
+                AddToBox(string.Format("Name : {0}, Age : {1}", st.Name, st.Age));
+            }
+        }
+
     }
 }

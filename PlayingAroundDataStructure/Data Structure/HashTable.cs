@@ -46,7 +46,7 @@ namespace Data_Structure
         {
             return key % Size;
         }
-
+        
         public void Put(int key, Object value)
         {
             int hashIndex = Gethash(key);
