@@ -199,5 +199,43 @@ namespace PlayingAroundDataStructure
                 AddToBox(q.Dequeue());
             }
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+            DynamicArrayQueue<int> d = new DynamicArrayQueue<int>();
+
+            d.Queue(50);
+            AddToBox(d.GetSize().ToString());
+            d.Queue(12);
+            AddToBox(d.GetSize().ToString());
+            d.Queue(1);
+            AddToBox(d.GetSize().ToString());
+            d.Queue(6);
+            AddToBox(d.GetSize().ToString());
+            d.Queue(44);
+            AddToBox(d.GetSize().ToString());
+            AddToBox("----------------");
+            while (!d.IsEmpty())
+            {
+                AddToBox(d.Dequeue().ToString());
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            DoubleLInkedListQueue<int> q = new DoubleLInkedListQueue<int>();
+
+            q.Queue(40);
+            q.Queue(5);
+            q.Queue(8);
+
+            while (!q.IsEmpty())
+            {
+                AddToBox(q.Dequeue().ToString());
+            }
+        }
     }
 }

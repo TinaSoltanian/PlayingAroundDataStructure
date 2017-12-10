@@ -20,10 +20,11 @@ namespace Data_Structure
         public NodeDouble Next;
         public NodeDouble Previous;
 
-        public NodeDouble(Object value, NodeDouble next)
+        public NodeDouble(Object value, NodeDouble next, NodeDouble previous)
         {
             this.Value = value;
             this.Next = next;
+            this.Previous = previous;
         }
     }
 
@@ -38,7 +39,7 @@ namespace Data_Structure
 
         public void Add(Object value)
         {
-            NodeDouble NodeDouble = new NodeDouble(value, null);
+            NodeDouble NodeDouble = new NodeDouble(value, null, null);
 
             if (Head == null)
                 Head = NodeDouble;

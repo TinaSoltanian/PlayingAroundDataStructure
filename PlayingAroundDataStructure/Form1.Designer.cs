@@ -31,15 +31,18 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.Box = new System.Windows.Forms.ListBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.LinkedButton = new System.Windows.Forms.Button();
             this.DaynaicBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -68,6 +71,9 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.button10);
+            this.splitContainer1.Panel2.Controls.Add(this.button9);
+            this.splitContainer1.Panel2.Controls.Add(this.button8);
             this.splitContainer1.Panel2.Controls.Add(this.button7);
             this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.button1);
@@ -90,11 +96,41 @@
             this.Box.Size = new System.Drawing.Size(448, 351);
             this.Box.TabIndex = 0;
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(7, 216);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(131, 23);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "Queue (Dynamic array)";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(7, 189);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(131, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Queue (Array)";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(7, 162);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Stack (Linked List)";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(12, 153);
+            this.button6.Location = new System.Drawing.Point(7, 136);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(122, 23);
+            this.button6.Size = new System.Drawing.Size(131, 23);
             this.button6.TabIndex = 5;
             this.button6.Text = "Stack (Dynamic array)";
             this.button6.UseVisualStyleBackColor = true;
@@ -102,9 +138,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(12, 124);
+            this.button5.Location = new System.Drawing.Point(7, 110);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(122, 23);
+            this.button5.Size = new System.Drawing.Size(131, 23);
             this.button5.TabIndex = 4;
             this.button5.Text = "Stack (Array)";
             this.button5.UseVisualStyleBackColor = true;
@@ -112,9 +148,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 95);
+            this.button4.Location = new System.Drawing.Point(7, 84);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 23);
+            this.button4.Size = new System.Drawing.Size(131, 23);
             this.button4.TabIndex = 3;
             this.button4.Text = "Hash Table";
             this.button4.UseVisualStyleBackColor = true;
@@ -122,9 +158,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 66);
+            this.button3.Location = new System.Drawing.Point(7, 58);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 23);
+            this.button3.Size = new System.Drawing.Size(131, 23);
             this.button3.TabIndex = 2;
             this.button3.Text = "Double linked list";
             this.button3.UseVisualStyleBackColor = true;
@@ -132,9 +168,9 @@
             // 
             // LinkedButton
             // 
-            this.LinkedButton.Location = new System.Drawing.Point(12, 37);
+            this.LinkedButton.Location = new System.Drawing.Point(7, 33);
             this.LinkedButton.Name = "LinkedButton";
-            this.LinkedButton.Size = new System.Drawing.Size(122, 23);
+            this.LinkedButton.Size = new System.Drawing.Size(131, 23);
             this.LinkedButton.TabIndex = 1;
             this.LinkedButton.Text = "Linked List";
             this.LinkedButton.UseVisualStyleBackColor = true;
@@ -142,42 +178,41 @@
             // 
             // DaynaicBtn
             // 
-            this.DaynaicBtn.Location = new System.Drawing.Point(12, 8);
+            this.DaynaicBtn.Location = new System.Drawing.Point(7, 8);
             this.DaynaicBtn.Name = "DaynaicBtn";
-            this.DaynaicBtn.Size = new System.Drawing.Size(122, 23);
+            this.DaynaicBtn.Size = new System.Drawing.Size(131, 23);
             this.DaynaicBtn.TabIndex = 0;
             this.DaynaicBtn.Text = "Dynaic array";
             this.DaynaicBtn.UseVisualStyleBackColor = true;
             this.DaynaicBtn.Click += new System.EventHandler(this.DaynaicBtn_Click);
             // 
-            // button1
+            // button8
             // 
-            this.button1.Location = new System.Drawing.Point(12, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Stack (Linked List)";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button8.Location = new System.Drawing.Point(7, 245);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(131, 23);
+            this.button8.TabIndex = 9;
+            this.button8.Text = "Queue(Double Linkelist)";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button2
+            // button9
             // 
-            this.button2.Location = new System.Drawing.Point(12, 212);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Queue (Array)";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button9.Location = new System.Drawing.Point(7, 274);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(131, 23);
+            this.button9.TabIndex = 10;
+            this.button9.Text = "button9";
+            this.button9.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // button10
             // 
-            this.button7.Location = new System.Drawing.Point(12, 242);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(122, 23);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button10.Location = new System.Drawing.Point(7, 303);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(131, 23);
+            this.button10.TabIndex = 11;
+            this.button10.Text = "button10";
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -210,6 +245,9 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
     }
 }
 
