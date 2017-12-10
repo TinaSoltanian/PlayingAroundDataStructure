@@ -202,8 +202,9 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(131, 23);
             this.button9.TabIndex = 10;
-            this.button9.Text = "button9";
+            this.button9.Text = "Practice 1";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -211,8 +212,9 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(131, 23);
             this.button10.TabIndex = 11;
-            this.button10.Text = "button10";
+            this.button10.Text = "Practice 2";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // Form1
             // 

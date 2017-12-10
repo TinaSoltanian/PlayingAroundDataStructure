@@ -237,5 +237,74 @@ namespace PlayingAroundDataStructure
                 AddToBox(q.Dequeue().ToString());
             }
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            AddToBox("We want to merge two same sized linked list but with this structure");
+            AddToBox("First element of Linked list 1 and Last Element of Linked list 2");
+            AddToBox("Linked list 1 { 1, 2, 3, 4, 5, 6} ");
+            AddToBox("Linked list 2 { 7, 8, 9, 10, 11, 12} ");
+            AddToBox("The result is { 1, 12, 2, 11, 3, 10, 4, 9, 5, 8, 6, 7 }");
+            AddToBox("we want to use best data structure with less memory usage");
+            AddToBox("So, First Linked list is queue with linked list structure,");
+            AddToBox(" but send one is stack with linked list structure");
+
+            Data_Structure.LinkedList<int> l1 = new Data_Structure.LinkedList<int>();
+           
+            l1.AddTheEnd(1);
+            l1.AddTheEnd(2);
+            l1.AddTheEnd(3);
+            l1.AddTheEnd(4);
+            l1.AddTheEnd(5);
+            l1.AddTheEnd(6);
+
+            LinkedListStack<int> l2 = new LinkedListStack<int>();
+            l2.Push(7);
+            l2.Push(8);
+            l2.Push(9);
+            l2.Push(10);
+            l2.Push(11);
+            l2.Push(12);
+
+            int i = 0;
+            while (!l2.IsEmpty())
+            {
+                AddToBox(l1[i].ToString());
+                AddToBox(l2.Pop().ToString());
+                i++;
+            }
+        }        
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            AddToBox("We want to store arraye of numbers which contains a lot of 0");
+            AddToBox("then we want to return value of specific elements");
+            AddToBox("and total number of 0");
+            AddToBox("array {0, 0, 0, 11, 8, ,1, 5, 0, 0, 9, 2, 0, 0}");
+            AddToBox("total of 0 => 7");
+            AddToBox("array[0] = 0");
+            AddToBox("array [4] = 8");
+
+            int[] numbers = { 0, 0, 0, 11, 8, 1, 5, 0, 0, 9, 2, 0, 0 };
+
+            CustomizedHashTable hash = new CustomizedHashTable(numbers.Length);
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                  hash.Put(numbers[i]);
+            }
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                AddToBox(hash.Get(numbers[i]).ToString());
+            }
+
+            AddToBox("----------");
+            AddToBox("Total number of zeros" + hash.GetZeroCount().ToString());
+        }
     }
 }

@@ -34,6 +34,31 @@ namespace Data_Structure
             Head = null;
         }
 
+        public T this[int index]
+        {
+            get
+            {
+                return Get(index);
+            }
+        }
+
+        private T Get(int index)
+        {
+            Node cont = Head;
+            int i = 0;
+
+            while(cont != null)
+            {
+                if (i == index)
+                    return (T)cont.Value;
+
+                cont = cont.Next;
+                i++;
+            }
+
+            return default(T);
+        }
+
         public void Add(Object value)
         {
             Node node = new Node(value, null);
@@ -45,6 +70,24 @@ namespace Data_Structure
                 node.Next = Head;
                 Head = node;
             }
+        }
+
+        public void AddTheEnd(object value)
+        {
+            if (Head == null)
+            {
+                Add(value);
+                return;
+            }
+
+            Node node = new Node(value, null);
+            Node tmp = Head;
+            while(tmp.Next != null)
+            {
+                tmp = tmp.Next;
+            }
+
+            tmp.Next = node;
         }
 
         //just first element

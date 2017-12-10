@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Structure\ArrayStack.cs" />
+    <Compile Include="Data Structure\CustomizedHashTable.cs" />
     <Compile Include="Data Structure\DoubleLinkedList.cs" />
     <Compile Include="Data Structure\DynamicArray.cs" />
     <Compile Include="Data Structure\DynamicArrayStack.cs" />
