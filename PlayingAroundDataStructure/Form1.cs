@@ -176,5 +176,28 @@ namespace PlayingAroundDataStructure
                 AddToBox(stack.Pop().ToString());
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            ArrayQueue<string> q = new ArrayQueue<string>(4);
+
+            q.Queue("item 1");
+            q.Queue("item 2");
+            q.Queue("item 3");
+            q.Queue("item 4");
+            if ( q.Queue("testing queue size") == QueueError.IsFull)
+            {
+                AddToBox("Queue is full");
+            }
+
+            AddToBox("-----------");
+
+            while (!q.IsEmpty())
+            {
+                AddToBox(q.Dequeue());
+            }
+        }
     }
 }
