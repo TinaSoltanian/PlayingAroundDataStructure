@@ -158,5 +158,23 @@ namespace PlayingAroundDataStructure
                 AddToBox(stack.Pop().ToString());
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            LinkedListStack<int> stack = new LinkedListStack<int>();
+
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            stack.Push(4);
+            stack.Push(5);
+
+            while (!stack.IsEmpty())
+            {
+                AddToBox(stack.Pop().ToString());
+            }
+        }
     }
 }

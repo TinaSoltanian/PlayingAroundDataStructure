@@ -15,7 +15,7 @@ namespace Data_Structure
             Top = null;
         }
 
-        public void Puch(Object value)
+        public void Push(Object value)
         {
             Node node = new Node(value, null);
 
@@ -26,6 +26,11 @@ namespace Data_Structure
                 node.Next = Top;
                 Top = node;
             }
+        }
+
+        public bool IsEmpty()
+        {
+            return Top == null;
         }
 
         //just first element

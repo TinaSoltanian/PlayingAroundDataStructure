@@ -37,13 +37,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.LinkedButton = new System.Windows.Forms.Button();
             this.DaynaicBtn = new System.Windows.Forms.Button();
-            this.selectThemeButton1 = new Telerik.WinControls.UI.SelectThemeButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selectThemeButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -67,7 +68,9 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.selectThemeButton1);
+            this.splitContainer1.Panel2.Controls.Add(this.button7);
+            this.splitContainer1.Panel2.Controls.Add(this.button2);
+            this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Panel2.Controls.Add(this.button6);
             this.splitContainer1.Panel2.Controls.Add(this.button5);
             this.splitContainer1.Panel2.Controls.Add(this.button4);
@@ -147,15 +150,33 @@
             this.DaynaicBtn.UseVisualStyleBackColor = true;
             this.DaynaicBtn.Click += new System.EventHandler(this.DaynaicBtn_Click);
             // 
-            // selectThemeButton1
+            // button1
             // 
-            this.selectThemeButton1.ControlToApplyTheme = null;
-            this.selectThemeButton1.InnerThemeName = null;
-            this.selectThemeButton1.Location = new System.Drawing.Point(74, 139);
-            this.selectThemeButton1.Name = "selectThemeButton1";
-            this.selectThemeButton1.Size = new System.Drawing.Size(130, 24);
-            this.selectThemeButton1.TabIndex = 6;
-            this.selectThemeButton1.Text = "selectThemeButton1";
+            this.button1.Location = new System.Drawing.Point(12, 182);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Stack (Linked List)";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 212);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(122, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(12, 242);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(122, 23);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -170,7 +191,6 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.selectThemeButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -186,7 +206,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button LinkedButton;
         private System.Windows.Forms.Button DaynaicBtn;
-        private Telerik.WinControls.UI.SelectThemeButton selectThemeButton1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
