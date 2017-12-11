@@ -631,5 +631,65 @@ namespace PlayingAroundDataStructure
                 AddToBox(array[i].ToString());
             }
         }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            MyTree.BinarySearchTree bs = new MyTree.BinarySearchTree();
+
+            bs.Add(bs.Root, new MyTree.TreeNode(50, null, null));
+            bs.Add(bs.Root, new MyTree.TreeNode(30, null, null));
+            bs.Add(bs.Root, new MyTree.TreeNode(70, null, null));
+            bs.Add(bs.Root, new MyTree.TreeNode(20, null, null));
+            bs.Add(bs.Root, new MyTree.TreeNode(40, null, null));
+            bs.Add(bs.Root, new MyTree.TreeNode(60, null, null));
+            bs.Add(bs.Root, new MyTree.TreeNode(80, null, null));
+
+            if (bs.Search(60, bs.Root) != null)
+                AddToBox(string.Format("{0} is found", 60));
+
+            if (bs.Search(90, bs.Root) == null)
+                AddToBox(string.Format("{0} is not found", 90));
+
+            List<string> list = new List<string>();
+
+            list.Clear();
+            bs.PrintTree(bs.Root, list, 0);
+            foreach (string item in list)
+            {
+                AddToBox(item);
+            }
+            AddToBox("");
+            AddToBox("delete 20");
+            AddToBox("-------------------------------------");
+            bs.Delete(20);
+            list.Clear();
+            bs.PrintTree(bs.Root, list, 0);
+            foreach (string item in list)
+            {
+                AddToBox(item);
+            }
+            AddToBox("");
+            AddToBox("delete 30");
+            AddToBox("--------------------------------------");
+            bs.Delete(30);
+            list.Clear();
+            bs.PrintTree(bs.Root, list, 0);
+            foreach (string item in list)
+            {
+                AddToBox(item);
+            }
+            AddToBox("");
+            AddToBox("delete 50");
+            AddToBox("-------------------------------------");
+            bs.Delete(50);
+            list.Clear();
+            bs.PrintTree(bs.Root, list, 0);
+            foreach (string item in list)
+            {
+                AddToBox(item);
+            }
+        }
     }
 }

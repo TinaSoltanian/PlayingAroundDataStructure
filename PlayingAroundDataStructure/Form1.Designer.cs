@@ -64,6 +64,7 @@
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -364,6 +365,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button28);
             this.tabPage3.Controls.Add(this.button27);
             this.tabPage3.Controls.Add(this.button26);
             this.tabPage3.Controls.Add(this.button25);
@@ -471,6 +473,16 @@
             this.button27.UseVisualStyleBackColor = true;
             this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(15, 272);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(167, 23);
+            this.button28.TabIndex = 12;
+            this.button28.Text = "Binary search tree";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -531,6 +543,7 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button28;
     }
 }
 
