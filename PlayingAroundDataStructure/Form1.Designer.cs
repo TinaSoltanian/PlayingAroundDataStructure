@@ -59,6 +59,11 @@
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -359,6 +364,11 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button27);
+            this.tabPage3.Controls.Add(this.button26);
+            this.tabPage3.Controls.Add(this.button25);
+            this.tabPage3.Controls.Add(this.button24);
+            this.tabPage3.Controls.Add(this.button23);
             this.tabPage3.Controls.Add(this.button22);
             this.tabPage3.Controls.Add(this.button19);
             this.tabPage3.Controls.Add(this.button20);
@@ -368,7 +378,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(204, 375);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Search Alogrithms";
+            this.tabPage3.Text = "Search and Sort Alogrithms";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button19
@@ -410,6 +420,56 @@
             this.button22.Text = "clear screen";
             this.button22.UseVisualStyleBackColor = true;
             this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(15, 127);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(167, 23);
+            this.button23.TabIndex = 7;
+            this.button23.Text = "Bubble sort";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(15, 156);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(167, 23);
+            this.button24.TabIndex = 8;
+            this.button24.Text = "Selection sort";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(15, 185);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(167, 23);
+            this.button25.TabIndex = 9;
+            this.button25.Text = "Quick sort";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(15, 214);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(167, 23);
+            this.button26.TabIndex = 10;
+            this.button26.Text = "Merge sort";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(15, 243);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(167, 23);
+            this.button27.TabIndex = 11;
+            this.button27.Text = "Heap sort";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // Form1
             // 
@@ -466,6 +526,11 @@
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button27;
     }
 }
 

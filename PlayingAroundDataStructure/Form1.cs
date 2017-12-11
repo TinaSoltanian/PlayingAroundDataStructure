@@ -535,5 +535,101 @@ namespace PlayingAroundDataStructure
         {
             Box.Items.Clear();
         }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            int[] array = { 6, 50, 1, 45, 2, 40 };
+            AddToBox("Before Sort . . .");
+            for (int i = 0; i < array.Length; i++)
+            {
+                AddToBox(array[i].ToString());
+            }
+
+            Sorts.BubbleSort(array);
+            AddToBox("After Sort . . .");
+            for (int i = 0; i < array.Length; i++)
+            {
+                AddToBox(array[i].ToString());
+            }
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            int[] array = { 6, 50, 1, 45, 2, 40 };
+            AddToBox("Before Sort . . .");
+            for (int i = 0; i < array.Length; i++)
+            {
+                AddToBox(array[i].ToString());
+            }
+
+            Sorts.SelectionSort(array);
+            AddToBox("After Sort . . .");
+            for (int i = 0; i < array.Length; i++)
+            {
+                AddToBox(array[i].ToString());
+            }
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            int[] array = { 6, 50, 1, 45, 2, 40 };
+            AddToBox("Before Sort . . .");
+            for (int i = 0; i < array.Length; i++)
+            {
+                AddToBox(array[i].ToString());
+            }
+
+            Sorts.QuickSort(array);
+            AddToBox("After Sort . . .");
+            for (int i = 0; i < array.Length; i++)
+            {
+                AddToBox(array[i].ToString());
+            }
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            int[] array = { 6, 50, 1, 45, 2, 40 };
+            AddToBox("Before Sort . . .");
+            for (int i = 0; i < array.Length; i++)
+            {
+                AddToBox(array[i].ToString());
+            }
+
+            MergeSort s = new MergeSort();
+            s.PrepareForSort(array);
+            AddToBox("After Sort . . .");
+            for (int i = 0; i < array.Length; i++)
+            {
+                AddToBox(array[i].ToString());
+            }
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            IComparable[] array = { 6, 50, 1, 45, 2, 40 };
+            AddToBox("Before Sort . . .");
+            for (int i = 0; i < array.Length; i++)
+            {
+                AddToBox(array[i].ToString());
+            }
+
+            Sorts.HeapSort(array);
+            AddToBox("After Sort . . .");
+            for (int i = 0; i < array.Length; i++)
+            {
+                AddToBox(array[i].ToString());
+            }
+        }
     }
 }
