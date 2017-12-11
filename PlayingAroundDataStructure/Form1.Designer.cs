@@ -52,6 +52,13 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -60,6 +67,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -101,6 +109,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -252,6 +261,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button18);
+            this.tabPage2.Controls.Add(this.button17);
             this.tabPage2.Controls.Add(this.button16);
             this.tabPage2.Controls.Add(this.button15);
             this.tabPage2.Controls.Add(this.button14);
@@ -326,6 +337,80 @@
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(18, 180);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(167, 23);
+            this.button17.TabIndex = 6;
+            this.button17.Text = "Factorial";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(18, 209);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(167, 23);
+            this.button18.TabIndex = 7;
+            this.button18.Text = "Tree explore";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.button22);
+            this.tabPage3.Controls.Add(this.button19);
+            this.tabPage3.Controls.Add(this.button20);
+            this.tabPage3.Controls.Add(this.button21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(204, 375);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Search Alogrithms";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(15, 69);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(167, 23);
+            this.button19.TabIndex = 5;
+            this.button19.Text = "Interpolation search";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(15, 40);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(167, 23);
+            this.button20.TabIndex = 4;
+            this.button20.Text = "Binary Search";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(15, 11);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(167, 23);
+            this.button21.TabIndex = 3;
+            this.button21.Text = "Linear search";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(15, 98);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(167, 23);
+            this.button22.TabIndex = 6;
+            this.button22.Text = "clear screen";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,6 +428,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -373,6 +459,13 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
     }
 }
 

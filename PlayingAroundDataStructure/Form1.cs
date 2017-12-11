@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Data_Structure;
+using SearchAlgorithms;
 
 namespace PlayingAroundDataStructure
 {
@@ -106,7 +107,7 @@ namespace PlayingAroundDataStructure
             ht.Put(40, "third element for jey 40");
 
             AddToBox("Seraching for key = 20");
-            AddToBox( ht.Get(20));
+            AddToBox(ht.Get(20));
             AddToBox("Seraching for key = 40");
             AddToBox(ht.Get(40));
         }
@@ -187,7 +188,7 @@ namespace PlayingAroundDataStructure
             q.Queue("item 2");
             q.Queue("item 3");
             q.Queue("item 4");
-            if ( q.Queue("testing queue size") == QueueError.IsFull)
+            if (q.Queue("testing queue size") == QueueError.IsFull)
             {
                 AddToBox("Queue is full");
             }
@@ -252,7 +253,7 @@ namespace PlayingAroundDataStructure
             AddToBox(" but send one is stack with linked list structure");
 
             Data_Structure.LinkedList<int> l1 = new Data_Structure.LinkedList<int>();
-           
+
             l1.AddTheEnd(1);
             l1.AddTheEnd(2);
             l1.AddTheEnd(3);
@@ -275,8 +276,8 @@ namespace PlayingAroundDataStructure
                 AddToBox(l2.Pop().ToString());
                 i++;
             }
-        }        
-        
+        }
+
         private void button10_Click(object sender, EventArgs e)
         {
             Box.Items.Clear();
@@ -288,14 +289,14 @@ namespace PlayingAroundDataStructure
             AddToBox("total of 0 => 7");
             AddToBox("array[0] = 0");
             AddToBox("array [4] = 8");
-            
+
             int[] numbers = { 0, 0, 0, 11, 8, 1, 5, 0, 0, 9, 2, 0, 0 };
 
             CustomizedHashTable hash = new CustomizedHashTable(numbers.Length);
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                  hash.Put(numbers[i]);
+                hash.Put(numbers[i]);
             }
 
             for (int i = 0; i < numbers.Length; i++)
@@ -304,8 +305,8 @@ namespace PlayingAroundDataStructure
             }
 
             AddToBox("----------");
-            AddToBox("Total number of zeros" + hash.GetZeroCount().ToString()); 
-           
+            AddToBox("Total number of zeros" + hash.GetZeroCount().ToString());
+
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -330,7 +331,7 @@ namespace PlayingAroundDataStructure
         {
             Box.Items.Clear();
 
-            System.Collections.Generic.LinkedList<Student> list = 
+            System.Collections.Generic.LinkedList<Student> list =
                 new System.Collections.Generic.LinkedList<Student>();
 
             AddToBox("The collection is linked list");
@@ -358,7 +359,7 @@ namespace PlayingAroundDataStructure
             list.Add(1, new Student { Name = "John", Age = 25 });
             list.Add(2, new Student { Name = "Anna", Age = 40 });
 
-            for (int i = 0; i < list.Count ; i++)
+            for (int i = 0; i < list.Count; i++)
             {
                 AddToBox(string.Format("Name : {0}, Age : {1}", list[i].Name, list[i].Age));
             }
@@ -433,5 +434,106 @@ namespace PlayingAroundDataStructure
             }
         }
 
+        private int Fact(int n)
+        {
+            if (n == 0)
+                return 1;
+            else
+                return n * (Fact(n - 1));
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+            int n = 4;
+            AddToBox(string.Format("({0})! = > {1}", n, Fact(n)));
+            n = 5;
+            AddToBox(string.Format("({0})! = > {1}", n, Fact(n)));
+
+        }
+
+        private void ExploreTree(NodeDouble root)
+        {
+            if (root == null)
+                return;
+
+            AddToBox(root.Value.ToString());
+
+            ExploreTree(root.Next);
+            ExploreTree(root.Previous);
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            LinkedDoubleList<string> tree = new LinkedDoubleList<String>();
+
+            NodeDouble root = new NodeDouble("A", null, null);
+            NodeDouble l1 = new NodeDouble("B", null, null);
+            NodeDouble l2 = new NodeDouble("C", null, null);
+            root.Next = l2;
+            root.Previous = l1;
+
+            NodeDouble l3 = new NodeDouble("D", null, null);
+            NodeDouble l4 = new NodeDouble("E", null, null);
+            NodeDouble l5 = new NodeDouble("F", null, null);
+            NodeDouble l6 = new NodeDouble("G", null, null);
+
+            l1.Next = l4;
+            l1.Previous = l3;
+            l2.Previous = l5;
+            l2.Next = l6;
+
+            ExploreTree(root);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            LinearSearch search = new LinearSearch( 9999 ,10000);
+
+            if (search.IsFound)
+            {
+                AddToBox(string.Format("Searching {0} with linear search and found nuber in {1} try.",
+                    9999, search.Try));
+            }
+            else
+            {
+                AddToBox("not found");
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            BinarySearch search = new BinarySearch(9999, 10000);
+
+            if (search.IsFound)
+            {
+                AddToBox(string.Format("Searching {0} with binary search and found nuber in {1} try.",
+                    9999, search.Try));
+            }
+            else
+            {
+                AddToBox("not found");
+            }
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            InterpolationSearch search = new InterpolationSearch(9999, 10000);
+
+            if (search.IsFound)
+            {
+                AddToBox(string.Format("Searching {0} with interpolation search and found nuber in {1} try.",
+                    9999, search.Try));
+            }
+            else
+            {
+                AddToBox("not found");
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+        }
     }
 }

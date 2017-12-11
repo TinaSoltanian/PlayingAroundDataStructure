@@ -68,6 +68,7 @@
     <Compile Include="Data Structure\LinkedListStack.cs" />
     <Compile Include="Data Structure\Queue.cs" />
     <Compile Include="Data Structure\Student.cs" />
+    <Compile Include="Data\SearchData.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
