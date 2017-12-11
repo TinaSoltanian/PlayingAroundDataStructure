@@ -252,14 +252,14 @@ namespace PlayingAroundDataStructure
             AddToBox("So, First Linked list is queue with linked list structure,");
             AddToBox(" but send one is stack with linked list structure");
 
-            Data_Structure.LinkedList<int> l1 = new Data_Structure.LinkedList<int>();
+            DoubleLInkedListQueue<int> l1 = new DoubleLInkedListQueue<int>();
 
-            l1.AddTheEnd(1);
-            l1.AddTheEnd(2);
-            l1.AddTheEnd(3);
-            l1.AddTheEnd(4);
-            l1.AddTheEnd(5);
-            l1.AddTheEnd(6);
+            l1.Queue(1);
+            l1.Queue(2);
+            l1.Queue(3);
+            l1.Queue(4);
+            l1.Queue(5);
+            l1.Queue(6);
 
             LinkedListStack<int> l2 = new LinkedListStack<int>();
             l2.Push(7);
@@ -272,7 +272,7 @@ namespace PlayingAroundDataStructure
             int i = 0;
             while (!l2.IsEmpty())
             {
-                AddToBox(l1[i].ToString());
+                AddToBox(l1.Dequeue().ToString());
                 AddToBox(l2.Pop().ToString());
                 i++;
             }
