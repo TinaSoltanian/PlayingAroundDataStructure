@@ -691,5 +691,83 @@ namespace PlayingAroundDataStructure
                 AddToBox(item);
             }
         }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            FindSubTree.FindSubTree bs = new FindSubTree.FindSubTree();
+            
+            bs.Add(50);
+            bs.Add(30);
+            bs.Add(70);
+            bs.Add(20);
+            bs.Add(40);
+            bs.Add(60);
+            bs.Add(80);
+            bs.Add(95);
+            bs.Add(10);
+
+            List<string> list = new List<string>();
+
+            bs.PrintTree(bs.Root, list, 0);
+
+            foreach (string item in list)
+            {
+                AddToBox(item);
+            }
+
+            AddToBox("Total number of nodes");
+            int c = bs.Count(bs.Root);
+            AddToBox(c.ToString());
+
+            List<int> counts = new List<int>();
+            counts = bs.SplitTree(30);
+
+            AddToBox("---------------------------------------");
+            foreach (int item in counts)
+            {
+                AddToBox(item.ToString());
+            }
+
+            int j = counts[0];
+            bool equal = true;
+            for (int i = 1; i < counts.Count(); i++)
+            {
+                equal = j == counts[i];
+                if (!equal)
+                    break;
+            }
+
+            AddToBox("devide trees from 30");
+            if (equal)
+                AddToBox("Sub trees are equal");
+            else
+                AddToBox("Sub trees are not equal");
+
+            counts.Clear();
+            counts = bs.SplitTree(50);
+
+            AddToBox("---------------------------------------");
+            foreach (int item in counts)
+            {
+                AddToBox(item.ToString());
+            }
+
+            j = counts[0];
+            equal = true;
+            for (int i = 1; i < counts.Count(); i++)
+            {
+                equal = j == counts[i];
+                if (!equal)
+                    break;
+            }
+
+            AddToBox("devide trees from 50");
+            if (equal)
+                AddToBox("Sub trees are equal");
+            else
+                AddToBox("Sub trees are not equal");
+        }
     }
 }

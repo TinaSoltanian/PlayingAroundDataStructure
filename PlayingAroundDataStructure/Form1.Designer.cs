@@ -46,25 +46,26 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -283,65 +284,15 @@
             this.tabPage2.Text = "Generic Lists";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // button18
             // 
-            this.button11.Location = new System.Drawing.Point(18, 6);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(167, 23);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "List (Dynamic array)";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(18, 35);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(167, 23);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "Linked list";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(18, 64);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(167, 23);
-            this.button13.TabIndex = 2;
-            this.button13.Text = "Dictionary (Hash table)";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(18, 93);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(167, 23);
-            this.button14.TabIndex = 3;
-            this.button14.Text = "HashSet (Unique hash table)";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(18, 122);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(167, 23);
-            this.button15.TabIndex = 4;
-            this.button15.Text = "Sorted list (Unique hash sorted)";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(18, 151);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(167, 23);
-            this.button16.TabIndex = 5;
-            this.button16.Text = "Queue";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.button18.Location = new System.Drawing.Point(18, 209);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(167, 23);
+            this.button18.TabIndex = 7;
+            this.button18.Text = "Tree explore";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
@@ -353,18 +304,69 @@
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
-            // button18
+            // button16
             // 
-            this.button18.Location = new System.Drawing.Point(18, 209);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(167, 23);
-            this.button18.TabIndex = 7;
-            this.button18.Text = "Tree explore";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.button16.Location = new System.Drawing.Point(18, 151);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(167, 23);
+            this.button16.TabIndex = 5;
+            this.button16.Text = "Queue";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(18, 122);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(167, 23);
+            this.button15.TabIndex = 4;
+            this.button15.Text = "Sorted list (Unique hash sorted)";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(18, 93);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(167, 23);
+            this.button14.TabIndex = 3;
+            this.button14.Text = "HashSet (Unique hash table)";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(18, 64);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(167, 23);
+            this.button13.TabIndex = 2;
+            this.button13.Text = "Dictionary (Hash table)";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(18, 35);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(167, 23);
+            this.button12.TabIndex = 1;
+            this.button12.Text = "Linked list";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(18, 6);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(167, 23);
+            this.button11.TabIndex = 0;
+            this.button11.Text = "List (Dynamic array)";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button29);
             this.tabPage3.Controls.Add(this.button28);
             this.tabPage3.Controls.Add(this.button27);
             this.tabPage3.Controls.Add(this.button26);
@@ -382,6 +384,76 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Search and Sort Alogrithms";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(15, 272);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(167, 23);
+            this.button28.TabIndex = 12;
+            this.button28.Text = "Binary search tree";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(15, 243);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(167, 23);
+            this.button27.TabIndex = 11;
+            this.button27.Text = "Heap sort";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(15, 214);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(167, 23);
+            this.button26.TabIndex = 10;
+            this.button26.Text = "Merge sort";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(15, 185);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(167, 23);
+            this.button25.TabIndex = 9;
+            this.button25.Text = "Quick sort";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(15, 156);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(167, 23);
+            this.button24.TabIndex = 8;
+            this.button24.Text = "Selection sort";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(15, 127);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(167, 23);
+            this.button23.TabIndex = 7;
+            this.button23.Text = "Bubble sort";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(15, 98);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(167, 23);
+            this.button22.TabIndex = 6;
+            this.button22.Text = "clear screen";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button19
             // 
@@ -413,75 +485,15 @@
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
-            // button22
+            // button29
             // 
-            this.button22.Location = new System.Drawing.Point(15, 98);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(167, 23);
-            this.button22.TabIndex = 6;
-            this.button22.Text = "clear screen";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(15, 127);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(167, 23);
-            this.button23.TabIndex = 7;
-            this.button23.Text = "Bubble sort";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
-            // 
-            // button24
-            // 
-            this.button24.Location = new System.Drawing.Point(15, 156);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(167, 23);
-            this.button24.TabIndex = 8;
-            this.button24.Text = "Selection sort";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
-            // 
-            // button25
-            // 
-            this.button25.Location = new System.Drawing.Point(15, 185);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(167, 23);
-            this.button25.TabIndex = 9;
-            this.button25.Text = "Quick sort";
-            this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.button25_Click);
-            // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(15, 214);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(167, 23);
-            this.button26.TabIndex = 10;
-            this.button26.Text = "Merge sort";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
-            // 
-            // button27
-            // 
-            this.button27.Location = new System.Drawing.Point(15, 243);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(167, 23);
-            this.button27.TabIndex = 11;
-            this.button27.Text = "Heap sort";
-            this.button27.UseVisualStyleBackColor = true;
-            this.button27.Click += new System.EventHandler(this.button27_Click);
-            // 
-            // button28
-            // 
-            this.button28.Location = new System.Drawing.Point(15, 272);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(167, 23);
-            this.button28.TabIndex = 12;
-            this.button28.Text = "Binary search tree";
-            this.button28.UseVisualStyleBackColor = true;
-            this.button28.Click += new System.EventHandler(this.button28_Click);
+            this.button29.Location = new System.Drawing.Point(15, 301);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(167, 23);
+            this.button29.TabIndex = 13;
+            this.button29.Text = "Find Sub tree";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // Form1
             // 
@@ -544,6 +556,7 @@
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button29;
     }
 }
 
