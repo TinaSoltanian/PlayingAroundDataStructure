@@ -55,6 +55,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button29 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
@@ -65,7 +66,8 @@
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button30 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -75,6 +77,7 @@
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -117,6 +120,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -385,6 +389,16 @@
             this.tabPage3.Text = "Search and Sort Alogrithms";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(15, 301);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(167, 23);
+            this.button29.TabIndex = 13;
+            this.button29.Text = "Find Sub tree";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
             // button28
             // 
             this.button28.Location = new System.Drawing.Point(15, 272);
@@ -485,15 +499,26 @@
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
-            // button29
+            // tabPage4
             // 
-            this.button29.Location = new System.Drawing.Point(15, 301);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(167, 23);
-            this.button29.TabIndex = 13;
-            this.button29.Text = "Find Sub tree";
-            this.button29.UseVisualStyleBackColor = true;
-            this.button29.Click += new System.EventHandler(this.button29_Click);
+            this.tabPage4.Controls.Add(this.button30);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(204, 375);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Graph";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // button30
+            // 
+            this.button30.Location = new System.Drawing.Point(19, 22);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(167, 23);
+            this.button30.TabIndex = 4;
+            this.button30.Text = "DFS";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // Form1
             // 
@@ -513,6 +538,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -557,6 +583,8 @@
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button30;
     }
 }
 

@@ -769,5 +769,30 @@ namespace PlayingAroundDataStructure
             else
                 AddToBox("Sub trees are not equal");
         }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            Graph.DFSSearch dfs = new Graph.DFSSearch(6);
+            dfs.Add(0, 2);
+            dfs.Add(0, 1);
+            dfs.Add(1, 4);
+            dfs.Add(1, 3);
+            dfs.Add(1, 0);
+            dfs.Add(3, 1);
+            dfs.Add(4, 1);
+            dfs.Add(2, 5);
+            dfs.Add(2, 0);
+            dfs.Add(5, 2);
+
+            List<String> list = new List<string>();
+            list = dfs.DFSExplore(0);
+            Box.Items.Clear();
+            AddToBox("Path is ...");
+            foreach (string item in list)
+            {
+                AddToBox(item);
+            }
+
+        }
     }
 }
