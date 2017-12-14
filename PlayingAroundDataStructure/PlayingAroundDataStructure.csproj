@@ -77,8 +77,10 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Graph\AdjecyList.cs" />
+    <Compile Include="Graph\BFSSearch.cs" />
     <Compile Include="Graph\DFSSearch.cs" />
     <Compile Include="Graph\GraphNode.cs" />
+    <Compile Include="Graph\TravelToSunnyCities.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tree\BinarySearchTree.cs" />

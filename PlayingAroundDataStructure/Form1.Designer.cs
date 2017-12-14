@@ -68,6 +68,8 @@
             this.button21 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button30 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -501,6 +503,8 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button32);
+            this.tabPage4.Controls.Add(this.button31);
             this.tabPage4.Controls.Add(this.button30);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
@@ -519,6 +523,26 @@
             this.button30.Text = "DFS";
             this.button30.UseVisualStyleBackColor = true;
             this.button30.Click += new System.EventHandler(this.button30_Click);
+            // 
+            // button31
+            // 
+            this.button31.Location = new System.Drawing.Point(19, 51);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(167, 23);
+            this.button31.TabIndex = 5;
+            this.button31.Text = "BFS";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
+            // 
+            // button32
+            // 
+            this.button32.Location = new System.Drawing.Point(19, 80);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(167, 23);
+            this.button32.TabIndex = 6;
+            this.button32.Text = "Travel to sunny cities";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // Form1
             // 
@@ -585,6 +609,8 @@
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button button32;
     }
 }
 

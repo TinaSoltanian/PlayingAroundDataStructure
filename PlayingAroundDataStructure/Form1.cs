@@ -794,5 +794,59 @@ namespace PlayingAroundDataStructure
             }
 
         }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            Graph.BFSSearch bfs = new Graph.BFSSearch(6);
+            bfs.Add(0, 2);
+            bfs.Add(0, 1);
+            bfs.Add(1, 4);
+            bfs.Add(1, 3);
+            bfs.Add(1, 0);
+            bfs.Add(3, 1);
+            bfs.Add(4, 1);
+            bfs.Add(2, 5);
+            bfs.Add(2, 0);
+            bfs.Add(5, 2);
+
+            List<String> list = new List<string>();
+            list = bfs.DFSExplore(0);
+            Box.Items.Clear();
+            AddToBox("Path is ...");
+            foreach (string item in list)
+            {
+                AddToBox(item);
+            }
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            //I want to travel in 4 cities and just stay there is the weather is sunny
+            //1 is sunne weather and 0 is cloudy
+            int[,] map = {
+                 { 1, 0, 1, 1},
+                 { 1, 1, 1, 0},
+                 { 1, 0, 1, 1},
+                 { 0, 0, 0, 1} };
+            AddToBox("I want to travel in 4 cities and in case the weather is sunny I want to stay there");
+            AddToBox("I have the weather forcast for 4 days so I want to see how long I have to stay in each city");
+            AddToBox("In order to enoy the sunny weather!");
+            Graph.TravelToSunnyCities t = new Graph.TravelToSunnyCities(map);
+            if (t.DoTravel())
+            {
+                AddToBox("this is your traveling schedule . . .");
+                List<int> r = t.Result;
+                for (int i = 0; i < r.Count(); i++)
+                {
+                    AddToBox(string.Format("{0} city {1} days", i + 1, r[i]));
+                }
+            }
+            else
+            {
+                AddToBox("the weather is not sunny all the time in your travel map!");
+            }
+        }
     }
 }
