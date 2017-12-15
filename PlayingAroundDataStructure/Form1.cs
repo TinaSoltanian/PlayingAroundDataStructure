@@ -488,7 +488,7 @@ namespace PlayingAroundDataStructure
 
         private void button21_Click(object sender, EventArgs e)
         {
-            LinearSearch search = new LinearSearch( 9999 ,10000);
+            LinearSearch search = new LinearSearch(9999, 10000);
 
             if (search.IsFound)
             {
@@ -697,7 +697,7 @@ namespace PlayingAroundDataStructure
             Box.Items.Clear();
 
             FindSubTree.FindSubTree bs = new FindSubTree.FindSubTree();
-            
+
             bs.Add(50);
             bs.Add(30);
             bs.Add(70);
@@ -846,6 +846,44 @@ namespace PlayingAroundDataStructure
             else
             {
                 AddToBox("the weather is not sunny all the time in your travel map!");
+            }
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            int[,] maze = {
+                 { 1, 0, 1, 1, 1, 1},
+                 { 1, 1, 1, 0, 0, 1},
+                 { 1, 0, 1, 1, 0, 1},
+                 { 0, 0, 0, 1, 0, 1},
+                 { 0, 0, 0, 1, 0, 1},
+                 { 0, 0, 0, 1, 0, 1}};
+
+            for (int i = 0; i < 6; i++)
+            {
+                string st = "";
+                for (int j = 0; j < 6; j++)
+                {
+                    st += maze[j, i].ToString() + "  ";
+                }
+                AddToBox(st);
+            }
+
+            AddToBox("________________________________________________");
+            Graph.Maze m = new Graph.Maze(maze);
+            if (m.Solve())
+            {
+            }
+
+
+            for (int i = 0; i < 6; i++)
+            {
+                string st = "";
+                for (int j = 0; j < 6; j++)
+                {
+                    st += m.Solution[j, i].ToString() + "  ";
+                }
+                AddToBox(st);
             }
         }
     }

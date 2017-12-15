@@ -67,9 +67,10 @@
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -503,6 +504,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button33);
             this.tabPage4.Controls.Add(this.button32);
             this.tabPage4.Controls.Add(this.button31);
             this.tabPage4.Controls.Add(this.button30);
@@ -514,15 +516,15 @@
             this.tabPage4.Text = "Graph";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // button30
+            // button32
             // 
-            this.button30.Location = new System.Drawing.Point(19, 22);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(167, 23);
-            this.button30.TabIndex = 4;
-            this.button30.Text = "DFS";
-            this.button30.UseVisualStyleBackColor = true;
-            this.button30.Click += new System.EventHandler(this.button30_Click);
+            this.button32.Location = new System.Drawing.Point(19, 80);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(167, 23);
+            this.button32.TabIndex = 6;
+            this.button32.Text = "Travel to sunny cities";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button31
             // 
@@ -534,15 +536,25 @@
             this.button31.UseVisualStyleBackColor = true;
             this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
-            // button32
+            // button30
             // 
-            this.button32.Location = new System.Drawing.Point(19, 80);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(167, 23);
-            this.button32.TabIndex = 6;
-            this.button32.Text = "Travel to sunny cities";
-            this.button32.UseVisualStyleBackColor = true;
-            this.button32.Click += new System.EventHandler(this.button32_Click);
+            this.button30.Location = new System.Drawing.Point(19, 22);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(167, 23);
+            this.button30.TabIndex = 4;
+            this.button30.Text = "DFS";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
+            // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(19, 109);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(167, 23);
+            this.button33.TabIndex = 7;
+            this.button33.Text = "Solve Maze";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // Form1
             // 
@@ -611,6 +623,7 @@
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button button33;
     }
 }
 
