@@ -67,10 +67,12 @@
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button33 = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button34 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -81,6 +83,7 @@
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -124,6 +127,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -516,6 +520,16 @@
             this.tabPage4.Text = "Graph";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(19, 109);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(167, 23);
+            this.button33.TabIndex = 7;
+            this.button33.Text = "Solve Maze";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
+            // 
             // button32
             // 
             this.button32.Location = new System.Drawing.Point(19, 80);
@@ -546,15 +560,26 @@
             this.button30.UseVisualStyleBackColor = true;
             this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
-            // button33
+            // tabPage5
             // 
-            this.button33.Location = new System.Drawing.Point(19, 109);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(167, 23);
-            this.button33.TabIndex = 7;
-            this.button33.Text = "Solve Maze";
-            this.button33.UseVisualStyleBackColor = true;
-            this.button33.Click += new System.EventHandler(this.button33_Click);
+            this.tabPage5.Controls.Add(this.button34);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(204, 375);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Interview questions";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // button34
+            // 
+            this.button34.Location = new System.Drawing.Point(21, 6);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(159, 23);
+            this.button34.TabIndex = 13;
+            this.button34.Text = "Rotate image";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click_1);
             // 
             // Form1
             // 
@@ -575,6 +600,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -624,6 +650,8 @@
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Button button34;
     }
 }
 

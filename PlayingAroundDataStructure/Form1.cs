@@ -886,5 +886,97 @@ namespace PlayingAroundDataStructure
                 AddToBox(st);
             }
         }
+
+        //char firstNotRepeatingCharacter(String s)
+        //{
+
+        //    int index = 0;
+        //    //Arrays of int are always initialized to 0
+        //    int[] letters = new int[26];
+        //    int[] order = new int[26];
+
+        //    //I think using getBytes() which returns the ASCII code is much more elegant than a classic for loop with charAt()     
+        //    for (int i : s.getBytes())
+        //    {
+        //        letters[i - 97]++;
+        //        order[i - 97] += index;
+        //        index++;
+        //    }
+
+        //    int minindex = s.length();
+        //    //I choose -2 to enjoy a single return statement as it is asked to return '_' if there is no non repeating character
+        //    int result = -2;
+
+        //    for (int i = 0; i < letters.length; i++)
+        //    {
+        //        if (letters[i] == 1 && order[i] < minindex)
+        //        {
+        //            minindex = order[i];
+        //            result = i;
+        //        }
+        //    }
+        //    return (char)(result + 97);
+        //}
+
+        int[][] rotateImage(int[][] a)
+        {
+
+            int n = a.GetLength(0);
+            Console.WriteLine(n);
+            int[][] result = new int[n][];
+            for (int i = 0; i < n; i++)
+            {
+                result[i] = new int[n];
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+
+                for (int j = 0; j < n; j++)
+                {
+                    result[j][(n - 1) - i] = a[i][j];
+                }
+            }
+
+            return result;
+        }
+
+        private void button34_Click_1(object sender, EventArgs e)
+        {
+            Box.Items.Clear();
+
+            //this is Jagged Arrays means every row is a single array which can have different length
+            // thi si interview question for apple, amazon 
+            int[][] a = new int[3][];
+            int[][] b;
+
+            a[0] = new int[] { 1, 2, 3 };
+            a[1] = new int[] { 4, 5, 6 };
+            a[2] = new int[] { 7, 8, 9 };
+
+            string row = "";
+            for (int i = 0; i < 3; i++)
+            {
+                row = "";
+                for (int j = 0; j < 3; j++)
+                {
+                    row += (a[i][j]).ToString() + "    ";                    
+                }
+                AddToBox(row);
+            }
+
+            AddToBox("____ After Rotation _____");
+            b = rotateImage(a);
+
+            for (int i = 0; i < 3; i++)
+            {
+                row = "";
+                for (int j = 0; j < 3; j++)
+                {
+                    row += (b[i][j]).ToString() + "    ";
+                }
+                AddToBox(row);
+            }
+        }
     }
 }
